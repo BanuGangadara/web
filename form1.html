@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form1</title>
+	<style type="text/css">
+		.signup{
+			width: 30%;
+			padding: 1%;
+			background-color:lightgrey;
+			float: middle;
+			text-align: center;
+			color: black;
+			margin: 0 auto;
+		}
+		.heading{
+			color: green;
+			font-size: 20px;
+		}
+		input{
+			margin-bottom: 20px;
+			padding: 10px 15px;
+            margin: 8px 0;
+            border-radius:10px;
+		}
+		button{
+			 height:40px;
+             width:200px;
+             background-color: green;
+             color: white;
+             border-radius:20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function validation(){ 
+	    if(document.registration.uname.value == ""){ 
+	         document.getElementById('error1').innerHTML="*Please enter a username*";
+	               
+    }
+	</script>
+</head>
+<body>
+<form class="signup" name="registration" onsubmit="validation()">
+	<h1 class="heading"> Create an Account </h1>
+	<hr>
+	<input type="text" placeholder="Name" name="uname">
+	
+	<input type="text" placeholder="Phonenumber" name="">
+	<input type="email" placeholder="Enter your email" name="email">
+	<input type="password" placeholder="password" name=""><br>
+	<input type="checkbox" name="terms" value=" "> I agree the <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a> <br><br>
+	<button onsubmit="validation()">Create Account</button>
+</form>
+</body>
+</html>
