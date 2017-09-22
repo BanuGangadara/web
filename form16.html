@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery Form</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/web/form16.css">
+</head>
+<body>
+<div class="container-fluid">
+<form  method="POST" action="welcome.html" onsubmit="return(validateForm())">
+<h2>Step1: Your Deatails</h2>
+	<div class="row">
+		<label for="fname" class="col-12">First Name</label>
+		<input type="text" id="fname" class="form-control" Placeholder="First and Last Name" name="" onblur="return validateFname()">
+		<p class="errmsg" id="msg1"></p>
+	</div>
+	<div class="row">
+		<label for="lname" class="col-12">Email</label>
+		<input type="text" id="email" class="form-control"  placeholder="example@domain.com" name="" onblur="return validateEmail()">
+		<p class="errmsg" id="msg2"></p>
+	</div>
+	<div class="row">
+	<label for="phno" class="col-12">Phone</label>
+	<input type="text" id="phno" class="form-control" placeholder="+440909090" name="" onblur="return validatePhone()">
+	<p class="errmsg" id="msg3"></p>
+	</div>
+	<h2>Step 2: Delivery Address</h2>
+	<div class="row">
+		<label for="ad" class="col-12">Address</label>
+		<textarea id="ad" rows="10" class="form-control" onblur="return validateAddress()"></textarea>
+		<p class="errmsg" id="msg4"></p>
+	</div>
+	<div class="row">
+		<label for="pc" class="col-12">Post code</label>
+		<input type="text" id="pc" class="form-control" placeholder="Post code" name="" onblur="return validatePostcode()">
+		<p class="errmsg" id="msg5"></p>
+	</div>
+	<div class="row">
+		<label for="cty" class="col-12">Country</label>
+		<input type="text" class="form-control" placeholder="" id="cty" name="">
+	</div>
+	<h2>Card Deatails</h2>
+	<div class="row">
+		<label for="cd" class="col-12">Card Number</label>
+		<input type="text" class="form-control" id="cd" name="" onblur="return validateCardnumber()">
+		<p class="errmsg" id="msg6"></p>
+	</div>
+	<div class="row">
+		<label for="sc" class="col-12">Security Code</label>
+		<input type="text" class="form-control" id="sc" name="">
+	</div>
+	<div class="row">
+		<label for="nc">Name on the Card</label>
+		<input type="text" id="nc" class="form-control" name="">
+	</div>
+	<center>
+		<button type="submit" class="btn">Buy It</button>
+	</center>
+</form>
+<script type="text/javascript">
+	function validateForm() {
+		if (validateFname()) {
+			if (validateEmail()) {
+				if (validatePhone()) {
+					if (validateAddress()) {
+						if (validatePostcode()) {
+							if (validateCardnumber()) {
+
+							}
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	function validateFname(){
+		var x=document.getElementById('fname').value;
+	    var regex = /^[a-zA-Z\s]+$/;
+	    if(regex.test(fname.value) == false){
+	    document.getElementById('msg1').innerHTML="The First Name field is requiered";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg1').innerHTML="";
+	    return true;
+	    }
+	}
+	function validateEmail(){
+		var email = document.getElementById('email').value;
+		var emailFilter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	    if (!emailFilter.test(email)) {
+	       document.getElementById('msg2').innerHTML="email field should contain the pattern of example@exe.com";
+	        return false;
+	    }
+	    else
+	    	document.getElementById('msg2').innerHTML="";
+	    	return true;
+	}
+	function validatePhone(){
+		var phonenumber=document.getElementById('phno');
+		var phonefilter=/^\(?([0-9]{2})\)?[-]?([0-9]{10})$/;
+		if (!phonefilter.test(phonenumber.value)) {
+	       document.getElementById('msg3').innerHTML="Phone number should contain the pattern like 91-9090090900";
+	        return false;
+	    }
+	    else
+	    	document.getElementById('msg3').innerHTML="";
+	    	return true;
+	}
+	function validateAddress(){
+		var x=document.getElementById('ad').value;
+	    var regex = /^[a-zA-Z0-9\s,'-]+$/;
+	    if(regex.test(ad.value) == false){
+	    document.getElementById('msg4').innerHTML="Enter your Address of delivery";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg4').innerHTML="";
+	    return true;
+	    }
+	}
+	function validatePostcode(){
+		var regex=/^[0-9]{5}(?:-[0-9]{4})?$/;
+		var zip=document.getElementById('pc').value;
+		if (!regex.test(zip)) {
+			document.getElementById('msg5').innerHTML="post code must be in the pattern like 50909-8909";
+	        return false;
+		}
+		document.getElementById('msg5').innerHTML="";
+			return true;
+	}
+	function validateCardnumber(){
+		var x=document.getElementById('cd').value;
+		 var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/; 
+		 if(cardno.test(x) == false){
+	    document.getElementById('msg6').innerHTML="Enter valid Card number";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg6').innerHTML="";
+	    return true;
+	    }
+	}
+</script>
+</div>
+</body>
+</html>

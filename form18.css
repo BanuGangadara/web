@@ -1,0 +1,247 @@
+.bg1{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+			background: url(/bgimg.jpg);
+			background-size: cover;
+		}
+		.loginbox{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 50%;
+			box-sizing: border-box;
+			background: rgba(0,0,0,.5);
+		}
+		.form-control:focus 
+		{
+		 background-color: rgba(0,0,0,.4); 
+		 color: white;
+		}
+		.user{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			top: calc(-100px/2);
+			left: calc(50% - 50px);
+
+		}
+		h2{
+			margin: 0px;
+			padding: 0px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+		}
+		.form-control{
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			height: 40px;
+			color: #fff;
+			font-size: 16px;
+			background: transparent;
+		}
+		:: placeholder{
+			color: rgba(255,255,255,.5);
+		}
+		.btn{
+			border: none;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+			background: #ff267e;
+			cursor: pointer;
+			border-radius: 20px;
+			margin-top: 10%;
+			
+		}
+		.btn:hover{
+			background: #efed40;
+			color: #262626;
+		}
+		.loginbox a{
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.loginbox label{
+			color: white;
+			margin-top: 4%;
+		}
+		.loginbox{
+			padding: 40px;
+		}
+		.errmsg{
+			color: red;
+		}
+@media only screen and (max-width: 460px) {
+	.bg1{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+			background: url(/bgimg.jpg);
+			background-size: cover;
+		}
+		.loginbox{
+			position: absolute;
+			top: 50%;
+			left: 60%;
+			transform: translate(-50%, -50%);
+			width: 50%;
+			box-sizing: border-box;
+			background: rgba(0,0,0,.5);
+		}
+		.form-control:focus 
+		{
+		 background-color: rgba(0,0,0,.4); 
+		 color: white;
+		}
+		.user{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			top: calc(-100px/2);
+			left: calc(50% - 50px);
+
+		}
+		h2{
+			margin: 0px;
+			padding: 0px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+		}
+		.form-control{
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			height: 40px;
+			color: #fff;
+			font-size: 16px;
+			background: transparent;
+		}
+		:: placeholder{
+			color: rgba(255,255,255,.5);
+		}
+		.btn{
+			border: none;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+			background: #ff267e;
+			cursor: pointer;
+			border-radius: 20px;
+			margin-top: 10%;
+			
+		}
+		.btn:hover{
+			background: #efed40;
+			color: #262626;
+		}
+		.loginbox a{
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.loginbox label{
+			color: white;
+			margin-top: 4%;
+		}
+		.loginbox{
+			padding: 40px;
+		}
+		.errmsg{
+			color: red;
+		}
+	}
+	@media only screen and (max-width: 460px) {
+		.bg1{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+			background: url(/bgimg.jpg);
+			background-size: cover;
+		}
+		.loginbox{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			box-sizing: border-box;
+			background: rgba(0,0,0,.5);
+		}
+		.form-control:focus 
+		{
+		 background-color: rgba(0,0,0,.4); 
+		 color: white;
+		}
+		.user{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			top: calc(-100px/2);
+			left: calc(50% - 50px);
+
+		}
+		h2{
+			margin: 0px;
+			padding: 0px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+		}
+		.form-control{
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			height: 40px;
+			color: #fff;
+			font-size: 16px;
+			background: transparent;
+		}
+		:: placeholder{
+			color: rgba(255,255,255,.5);
+		}
+		.btn{
+			border: none;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+			background: #ff267e;
+			cursor: pointer;
+			border-radius: 20px;
+			margin-top: 10%;
+			
+		}
+		.btn:hover{
+			background: #efed40;
+			color: #262626;
+		}
+		.loginbox a{
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.loginbox label{
+			color: white;
+			margin-top: 4%;
+		}
+		.loginbox{
+			padding: 40px;
+		}
+		.errmsg{
+			color: red;
+		}
+	}

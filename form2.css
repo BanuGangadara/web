@@ -1,0 +1,70 @@
+.form1{
+	padding: 5%;
+	width: 50%;
+	background-color: lightgrey;
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+.errmsg{
+	color: red;
+}
+.btn{
+	margin-top: 6%;
+	border: 4px solid black;
+	border-radius: 20px;
+	margin-left: 25%;
+	width: 50%;
+}
+label{
+	margin-top: 5%;
+}
+@media only screen and (max-width: 768px) {
+	.form1{
+	padding: 5%;
+	width: 60%;
+	background-color: lightgrey;
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+.errmsg{
+	color: red;
+}
+.btn{
+	margin-top: 6%;
+	border: 4px solid black;
+	border-radius: 20px;
+	margin-left: 25%;
+	width: 50%;
+}
+label{
+	margin-top: 5%;
+}
+}
+@media only screen and (max-width: 360px) {
+	.form1{
+	padding: 5%;
+	width: 100%;
+	background-color: lightgrey;
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+.errmsg{
+	color: red;
+}
+.btn{
+	margin-top: 6%;
+	border: 4px solid black;
+	border-radius: 20px;
+	margin-left: 25%;
+	width: 50%;
+}
+label{
+	margin-top: 5%;
+}
+}

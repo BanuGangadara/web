@@ -1,0 +1,55 @@
+.heading{
+ text-align: center;
+ padding: 0.5%;
+
+}
+.errmsg{
+	color: red;
+}
+form{
+	width: 40%;
+	padding: 1%;
+	background-color: lightgrey;
+	margin: auto;
+}
+.row{
+	margin-top: 3%;
+}
+@media only screen and (max-width: 768px) {
+.heading{
+ text-align: center;
+ padding: 0.5%;
+
+}
+.errmsg{
+	color: red;
+}
+form{
+	width: 60%;
+	padding: 1%;
+	background-color: lightgrey;
+	margin: auto;
+}
+.row{
+	margin-top: 3%;
+}
+}
+@media only screen and (max-width: 460px) {
+	.heading{
+ text-align: center;
+ padding: 0.5%;
+
+}
+.errmsg{
+	color: red;
+}
+form{
+	width: 100%;
+	padding: 1%;
+	background-color: lightgrey;
+	margin: auto;
+}
+.row{
+	margin-top: 3%;
+}
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JanuaryYouthPrograms</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="/web/form4.css">
+</head>
+<body>
+<div class="container-fluid">
+<header class="row header1">
+	<div class="col-4">
+		<img src="/elslogo1.png">
+	</div>
+	<div class="col-8">
+		<select class="form-control dropdown">
+			<option value="en">English</option>
+			<option value="tr">T&#252;rk&#231;e</option>
+		</select>
+	</div>	
+</header>
+<div class="row">
+	<img src="/web/index5.jpeg" style="width: 100%; height: 100%;">
+</div>
+<div class="row" style="margin: 4%;">
+	<div class="col-6">
+		<h1>Studying English with ELS will allow you to visit many exciting global destinations.</h1>
+		<p>St. Petersburg, Florida, at Eckerd College </p>
+		<div class="row">
+		<div class="col-5">
+			<img src="/web/index6.png">
+		</div>
+		<div class="col-7">
+			 This all-inclusive program is for students looking for a unique American experience while on break from their regular academic studies in their home country.
+
+			The curriculum is General English and conversation practice with professional ELS instructors. Advanced level students may choose a TOEFL® or SAT Prep elective.
+
+			Students live with a carefully screened English-speaking host family, experiencing a pleasant and safe “home away from home.” Living with a host family can help your child learn English faster while experiencing American culture.
+
+			St. Petersburg, Florida, is located on Florida’s tropical west coast, known for its beaches, mild climate, and cultural attractions. Students enjoy supervised trips to Disney’s Magic Kingdom®, Islands of Adventure®, SeaWorld®, Busch Gardens® and 
+		</div>
+			
+		</div>
+		<p>JANUARY YOUTH HOMESTAY
+		</p>
+		<p>PROGRAM DETAILS</p>
+		<p>
+		<strong>Age Requirement </strong>10 to 16</p>
+		<p>
+		<strong>Student Maximum  per Class</strong> 15
+		</p>
+		<p><strong>Number of Lessons per Week</strong>  16 50-minute lessons per week</p>
+		<p>
+		<strong>Program Length</strong>  Three weeks
+		</p>
+		<p><strong>Levels Offered </strong> Beginner, Intermediate and Advanced
+		</p>
+		<p><strong>Accommodations</strong>  Homestay with an American family; two students per family. Families provide breakfast and dinner each day and three meals (including lunches) on the weekends. On class days, lunches are included and provided via the campus cafeteria.
+		</p>
+		<p><strong>Complimentary Features </strong> All-inclusive pricing includes Certificate of Attendance, ELS medical insurance, round-trip airport pickup (from TPA), ELS tote bag, lanyard, USB bracelet, T-shirt, beach towel and all curricular materials
+		</p>
+		<p>&nbsp;</p>
+		<p>SAMPLE ACTIVITY CALENDAR   (subject to change)</p>
+		<p>
+		</p>
+		<table style="width: 654px; height: 158px;">
+			    <tbody>
+			        <tr>
+			            <td><strong>&nbsp;Sunday</strong></td>
+			            <td>Arrival and Check-in</td>
+			            <td><span>Busch Gardens&reg;</span></td>
+			            <td>&nbsp;Family Day</td>
+			        </tr>
+			        <tr>
+			            <td>&nbsp;<strong>Monday</strong></td>
+			            <td>&nbsp;Testing and Target Shopping</td>
+			            <td>Beach Trip</td>
+			            <td>Disney's Animal Kingdom</td>
+			        </tr>
+			        <tr>
+			            <td><strong>Tuesday</strong></td>
+			            <td>Campus Tour and Welcome Mixer</td>
+			            <td>Celebration Station</td>
+			            <td>International Mail</td>
+			        </tr>
+			        <tr>
+			            <td><strong>Wednesday</strong></td>
+			            <td>St. Petersburg Beach and Pizza Party</td>
+			            <td>Trampoline Park</td>
+			            <td>Mystery Event</td>
+			        </tr>
+			        <tr>
+			            <td><strong>Thursday</strong></td>
+			            <td>Ice Skating &amp; Shopping</td>
+			            <td>Hockey Game</td>
+			            <td>Island of Adventure *</td>
+			        </tr>
+			        <tr>
+			            <td><strong>Friday</strong></td>
+			            <td>Disney's Magic&nbsp;<span>Kingdom&reg;</span></td>
+			            <td>&nbsp;Outlet Shopping</td>
+			            <td>Graduation and Farewell Party</td>
+			        </tr>
+			        <tr>
+			            <td><strong>Saturday</strong></td>
+			            <td>Family Picnic</td>
+			            <td>Universal Studios*</td>
+			            <td>Departure</td>
+			        </tr>
+			    </tbody>
+			</table>
+	</div>
+	<div class="col-6">
+		<h1 class="rheading"> Contact ELS!</h1>
+		<form method="POST" action="welcome.html" name="elsForm"  onsubmit="return validateForm();">
+				<div class="row">
+				<label for="fname" class="col-12"><span class="required">* &nbsp</span>First Name</label>
+				<input id="fname" class="form-control" type="text" name="First_Name" onblur="return (validateFname())">
+				</div>
+				<p class="errmsg col-12" id="msg1"></p>
+				<div class="row">
+				<label for="lname" class="col-12"><span class="required">* &nbsp</span>Last Name/Family Name</label>
+				<input id="lname" class="form-control col-12" type="text" name="Last_Name" onblur="return (validateLname())">
+				</div>
+				<p class="errmsg col-12" id="msg2"></p>
+				<div class="row">
+				<label class="col-12"><span class="required">* &nbsp</span>Gender</label>
+				<div class="form-check col-12">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="gender" id="male" value="option1" >
+				   Male
+				  </label>
+				</div>
+				<div class="form-check col-12" >
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="gender" id="female" value="option2" >
+				    Female
+				  </label>
+				</div>
+				
+				</div>
+				<div class="errmsg col-12" id="msg3" onsubmit="return validateGender()"></div>
+				<div class="row">
+				<label for="email" class="col-12"><span class="required">* &nbsp</span>Email</label>
+				<input id="email" class="form-control" type="email" name="email" onblur="return validateEmail()">
+				
+				</div>
+				<div class="errmsg col-12" id="msg4"></div>
+				<div class="row">
+				<label for="phno" class="col-12"><span class="required">* &nbsp</span>Phone Number/Mobile Number</label>
+				<input id="phno" class="form-control" type="text" name="phone_number" onblur="return validatePhone()">
+				
+				</div>
+				<div class="errmsg col-12" id="msg5"></div>
+				<div class="row">
+				<label for="country" class="col-12"><span class="required">* &nbsp</span>Country of Residence</label>
+					<select id="country" class="form-control" value="0" onblur="return validateCountry(this)">
+					<option value="0"></option>
+					<option value="Australia">Australia</option>
+  					<option value="Sweden">Sweden</option>
+  					<option value="France">France</option>
+  					<option value="Japan">Japan</option>
+  					<option value="India">India</option>
+  					<option value="Italy">Italy</option>
+					</select>
+					
+				</div>
+				<div class="errmsg col-12" id="msg6"></div>
+				<div class="row">
+				<label for="bdate" class="col-12"><span class="required">* &nbsp</span>Year Born</label>
+				<input id="bdate" class="form-control" type="date" name="Date_of_Birth" onblur="return validateYear()">
+				
+				</div>
+				<div class="errmsg col-12" id="msg7"></div>
+				<div class="row">
+				<label for="interest" class="col-12"><span class="required">* &nbsp</span>Center of interest</label>
+				<select class="form-control" id="interest" value="0" onblur="return validateInterest(this)">
+				<option value="0"></option>
+				<option value="Toronto">Toronto</option>
+  				<option value="Vancouver">Vancouver</option>
+				</select>
+				
+				</div>
+				<div class="errmsg col-12" id="msg8"></div>
+				<div class="row">
+				<label for="help" class="col-12"><span class="required">* &nbsp</span>What do you need help with?</label>
+				<select class="form-control" id="help" value="0" onblur="return validateHelp()">
+				<option value="0"></option>
+				<option value="English for Academic Purpose">English for Academic Purpose</option>
+  				<option value="General English">General English</option>
+				</select>
+				
+				</div>
+				<div class="errmsg col-12" id="msg9"></div>
+				<div class="row">
+				<div class="form-check form-check-inline">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="checkbox" id="check" value="option1" onblur="return validateCheck()"> I agree to the <a href="">Terms of Use </a>and <a href=" ">Privacy Policy</a>
+				  </label>
+				</div>
+				</div>
+				<div class="errmsg" id="msg10"></div>
+				<center>
+				<button type="submit" class="btn">Submit</button>
+				</center>
+			</form>
+	</div>
+</div>	
+</div>	
+</div>
+<script type="text/javascript">
+	function validateForm() {
+	if (validateFname()) {
+		if (validateLname()) {
+			if (validateGender()) {
+				if (validateEmail()) {
+					if (validatePhone()) {
+						if (validateCountry()) {
+							if (validateYear()) {
+								if (validateInterest()) {
+									if (validateHelp()) {
+									if (validateCheck()) {
+									}
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	return false;
+}
+function validateFname(){
+	var x=document.getElementById('fname').value;
+    var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(fname.value) == false){
+    document.getElementById('msg1').innerHTML="The First Name field is requiered";
+    return false;
+    }
+    else{
+    document.getElementById('msg1').innerHTML="";
+    return true;
+    }
+}
+function validateLname(){
+	var x=document.getElementById('lname');
+   	var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(lname.value) == false){
+    document.getElementById('msg2').innerHTML="The Last Name is required";
+    return false;
+    }
+    else{
+    document.getElementById('msg2').innerHTML="";
+    return true;
+    }
+}
+function validateGender(){
+	var id1=document.getElementById('male').checked;
+	var id2=document.getElementById('female').checked;
+	if (id1==false && id2==false) {
+		document.getElementById('msg3').innerHTML="Gender Field is required";
+    	return false;
+	}
+	else
+		return true;
+}
+function validateEmail(){
+	var email = document.getElementById('email').value;
+	var emailFilter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!emailFilter.test(email)) {
+       document.getElementById('msg4').innerHTML="email field should contain the pattern of example@exe.com";
+        return false;
+    }
+    else
+    	document.getElementById('msg4').innerHTML="";
+    	return true;
+}
+function validatePhone(){
+	var phonenumber=document.getElementById('phno');
+	var phonefilter=/^\(?([0-9]{2})\)?[-]?([0-9]{10})$/;
+	if (!phonefilter.test(phonenumber.value)) {
+       document.getElementById('msg5').innerHTML="Phone number should contain the pattern like 91-9090090900";
+        return false;
+    }
+    else
+    	document.getElementById('msg5').innerHTML="";
+    	return true;
+}
+function validateCountry(country){
+	var selectedText = country.options[country.selectedIndex].innerHTML;
+        var selectedValue = country.value;
+        if (selectedValue=="0") {
+        	document.getElementById('msg6').innerHTML="The Country of residence field is required";
+        	return false;
+        }
+        else
+        	document.getElementById('msg6').innerHTML="";
+    		return true;
+}
+function validateYear(){
+	var bday=document.getElementById('bdate');
+    var dob =new Date(bday.value);
+        var month = dob.getMonth();
+        var day   = dob.getDate();  
+        var year  = dob.getFullYear();
+        if(year>2017){
+        document.getElementById('msg7').innerHTML= "Please enter valid year format"; 
+        return false;
+      }
+      else if(bday.value=="")
+      {
+        document.getElementById('msg7').innerHTML= "The year born field is required"; 
+        return false;
+      }
+      else
+        document.getElementById('msg7').innerHTML="";
+        return true;
+}
+function validateInterest(interest){
+		var selectedText = interest.options[interest.selectedIndex].innerHTML;
+        var selectedValue = interest.value;
+        if (selectedValue=="0") {
+        	document.getElementById('msg8').innerHTML="The Center of interest field is required";
+        	return false;
+        }
+        else
+        	document.getElementById('msg8').innerHTML="";
+    		return true;
+}
+function validateHelp(){
+	var selectedText = help.options[help.selectedIndex].innerHTML;
+        var selectedValue = help.value;
+        if (selectedValue=="0") {
+        	document.getElementById('msg9').innerHTML="This field should not be blank";
+        	return false;
+        }
+        else
+        	document.getElementById('msg9').innerHTML="";
+    		return true;
+}
+function validateCheck(){
+	var id1=document.getElementById('check').checked;
+	if (id1==false ) {
+		document.getElementById('msg10').innerHTML="The Terms And Conditions field is required.";
+    	return false;
+	}
+	else
+		document.getElementById('msg10').innerHTML="";
+		return true;
+}
+</script>
+</body>
+<div id="footer">
+	<footer>© Copyright 2017 ELS Educational Services, Inc., a <a href="">Berlitz company</a>
+	<div id="key">
+	<a>Accrediation</a>&nbsp;&nbsp;
+	<a> Privacy Policy</a>&nbsp;&nbsp;
+	<a> Terms</a>
+	</div>
+	</footer>
+</div>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form20</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/web/form18.css">
+</head>
+<body class="bg1">
+<div class="loginbox">
+	<h2>Registration Form</h2>
+	<form method="POST" action="welcome.html" name="myForm"  onSubmit="return validateForm();">
+		<div class="row">
+		<label class="col-12">First Name</label>
+		<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="" onblur="return validateFname()">
+		<p class="errmsg" id="msg1"></p>
+		<label class="col-12">Last Name</label>
+		<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="" onblur="return validateLname()">
+		<p class="errmsg" id="msg2"></p>
+		<label class="col-12">Date of Birth</label>
+		<input type="Date" class="form-control" id="dob" placeholder="Enter Your Date of Birth" name="" onblur="return validateDOB()">
+		<p class="errmsg" id="msg3"></p>
+		<label class="col-12">Choose your username</label>
+		<input type="text" class="form-control" id="uname" placeholder="Enter User Name" name="" onblur="return validateUname()">
+		<p class="errmsg" id="msg4"></p>
+		<label class="col-12">Enter Password</label>
+		<input type="Password" class="form-control" placeholder="Enter Password" name="" id="pwd" onblur="return validatePassword()">
+		<p class="errmsg" id="msg5"></p>
+		</div>
+		<center>
+		<input type="submit" name="" value="Sign In"><br>
+		</center>
+		
+	</form>
+</div>
+<script type="text/javascript">
+	function validateForm() {
+		if (validateFname()) {
+			if (validateLname()) {
+				if (validateDOB()) {
+					if (validateUname()) {
+						if (validatePassword()) {}
+					}
+				}
+			}
+
+		}
+		return false;
+	}
+	function validateFname(){
+			var x=document.getElementById('fname').value;
+	    var regex = /^[a-zA-Z\s]+$/;
+	    if(regex.test(fname.value) == false){
+	    document.getElementById('msg1').innerHTML="The First Name field is requiered";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg1').innerHTML="";
+	    return true;
+	    }
+			}
+	function validateLname(){
+		var x=document.getElementById('lname');
+	   	var regex = /^[a-zA-Z\s]+$/;
+	    if(regex.test(lname.value) == false){
+	    document.getElementById('msg2').innerHTML="The Last Name is required";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg2').innerHTML="";
+	    return true;
+	    }
+	}
+	function validateDOB(){
+		var bday=document.getElementById('dob');
+	    var dob =new Date(bday.value);
+	        var month = dob.getMonth();
+	        var day   = dob.getDate();  
+	        var year  = dob.getFullYear();
+	        if(year>2017){
+	        document.getElementById('msg3').innerHTML= "Please enter valid year format"; 
+	        return false;
+	      }
+	      else if(bday.value=="")
+	      {
+	        document.getElementById('msg3').innerHTML= "The year born field is required"; 
+	        return false;
+	      }
+	      else
+	        document.getElementById('msg3').innerHTML="";
+	        return true;
+		}
+	function validateUname(){
+		var x=document.getElementById('uname');
+	   	var regex = /^[a-zA-Z\s]+$/;
+	    if(regex.test(x.value) == false){
+	    document.getElementById('msg4').innerHTML="Enter Username";
+	    return false;
+	    }
+	    else{
+	    document.getElementById('msg4').innerHTML="";
+	    return true;
+	    }
+	} 
+	function validatePassword(){
+		var pwd= document.getElementById('pwd').value;
+	    var password=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
+	    if (!password.test(pwd)) {
+	      document.getElementById('msg5').innerHTML="enter valid password";
+	      return false;
+	    }
+	    else
+	      document.getElementById('msg5').innerHTML="";
+	      return true;
+	   }
+	
+</script>
+</body>
+</html>

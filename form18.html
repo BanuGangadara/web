@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/web/form18.css">
+</head>
+<body class="bg1">
+<div class="loginbox">
+	<img src="/logo.png" class="user">
+	<h2>Login here</h2>
+	<form method="POST" action="welcome.html" name="myForm"  onSubmit="return validateForm();">
+		<div class="row">
+		<label class="col-12">Email</label>
+		<input type="text" class="form-control" id="uname" placeholder="Enter email" name="" onblur="return validateEmail()">
+		<p class="errmsg" id="msg1"></p>
+		<label class="col-12">Password</label>
+		<input type="text" placeholder="Password" id="pwd" class="form-control" name="" onblur="return validatePassword()">
+		<p class="errmsg" id="msg2"></p>
+		</div>
+		<center>
+		<button type="submit" class="btn" name="" value="Sign In">Submit</button>
+		</center>
+	</form>
+</div>
+<script type="text/javascript">
+	function validateForm() {
+		if (validateEmail()) {
+			if (validatePassword()) {
+
+			}
+
+		}
+		return false;
+	}
+	function validateEmail(){
+		var email = document.getElementById('uname').value;
+	    var emailFilter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	      if (!emailFilter.test(email)) {
+	         document.getElementById('msg1').innerHTML="enter valid email ";
+	          return false;
+	      }
+	      else
+	        document.getElementById('msg1').innerHTML="";
+	        return true;
+		}
+	function validatePassword(){
+		var pwd= document.getElementById('pwd').value;
+	    var password=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
+	    if (!password.test(pwd)) {
+	      document.getElementById('msg2').innerHTML="enter valid password";
+	      return false;
+	    }
+	    else
+	      document.getElementById('msg2').innerHTML="";
+	      return true;
+	   }
+</script>
+</body>
+</html>
